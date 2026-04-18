@@ -67,7 +67,7 @@
           </div>
         </div>
         <div id="clock-box">
-          <span id=<span id="clock"></span>
+          <span id="clock"></span>
           <!-- Change to "6940 days..." if needed -->
         </div>
         <canvas id="canvas" width="1100" height="680"></canvas>
@@ -212,7 +212,15 @@
               foot.draw();
               $await(Jscex.Async.sleep(10));
             }
-          })nimate = eval(
+          );
+var growAnimate = eval(
+  Jscex.compile("async", function () {
+    do {
+      tree.grow();
+      $await(Jscex.Async.sleep(10));
+    } while (tree.canGrow());
+  })
+);
           Jscex.compile("async", function () {
             do {
               tree.grow();
