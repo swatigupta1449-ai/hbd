@@ -1,4 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+        );
+
+        var growA<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -50,21 +53,21 @@
       <div id="wrap">
         <div id="text">
           <div id="code">
-            <span class="say">Wishing you a beautiful day 💫</span><br />
-            <span class="say">Happy Birthday 🎉</span><br />
+            <span class="say">Wishing you a year full of happiness and growth 💫</span><br />
+            <span class="say">Happy Birthday Soujanya 🎉</span><br />
             <span class="say">May you be blessed with joy and peace 🌟</span
             ><br />
             <span class="say"
               >And may your heart be filled with happiness 💕</span
             ><br />
-            <span class="say">You are truly appreciated ❤️</span><br />
+            <span class="say">I hope you keep growing , keep shining and achieve everything you want in life❤️</span><br />
             <span class="say">Wishing you love and smiles always 🥰</span><br />
             <span class="say">Hope your day is as amazing as you are 🎂✨</span
             ><br />
           </div>
         </div>
         <div id="clock-box">
-          <span id="clock">577 days 0 hours 0 minutes 0 seconds</span>
+          <span id=<span id="clock"></span>
           <!-- Change to "6940 days..." if needed -->
         </div>
         <canvas id="canvas" width="1100" height="680"></canvas>
@@ -209,10 +212,7 @@
               foot.draw();
               $await(Jscex.Async.sleep(10));
             }
-          })
-        );
-
-        var growAnimate = eval(
+          })nimate = eval(
           Jscex.compile("async", function () {
             do {
               tree.grow();
@@ -264,7 +264,25 @@
             textAnimate().start();
           })
         );
+var together = new Date();
+together.setFullYear(2007, 3, 19); // 19 April 2007 (turning 18 in 2025)
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
 
+setInterval(function () {
+  var now = new Date();
+  var diff = now - together;
+
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  var minutes = Math.floor((diff / (1000 * 60)) % 60);
+  var seconds = Math.floor((diff / 1000) % 60);
+
+  document.getElementById("clock").innerHTML =
+    days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
+}, 1000);
         runAsync().start();
       })();
     </script>
